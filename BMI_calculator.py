@@ -14,14 +14,13 @@ def animate():
         sys.stdout.write('\rloading your' + c)
         sys.stdout.flush()
         time.sleep(0.1)
-    sys.stdout.write('\rsurvey completed')
+    sys.stdout.write('\rsurvey completed!')
 
 
 weight = input("enter your weight in Kilo Gram(KG)\n")
 height = input("enter your height in meters\n")
 float_height = float(height)
 BMI = float(weight)/(float_height ** 2)
-BMI = int(BMI)
 # animation part strt
 # long process here
 t = threading.Thread(target=animate)
@@ -29,7 +28,8 @@ t.start()
 time.sleep(2)
 done = True
 # animtaion part ends here
-print("\nyour BMI is", BMI)
+print(f"\nyour BMI is {int(BMI)}")
+print(type(BMI))
 if 0 <= BMI <= 18.5:
     print("you are underweight,\n please improve your protein intake")
 elif 18.6 <= BMI <= 25:
