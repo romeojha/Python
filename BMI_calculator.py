@@ -21,7 +21,7 @@ weight = input("enter your weight in Kilo Gram(KG)\n")
 height = input("enter your height in meters\n")
 float_height = float(height)
 BMI = float(weight)/(float_height ** 2)
-# animation part strt
+# animation part start
 # long process here
 t = threading.Thread(target=animate)
 t.start()
