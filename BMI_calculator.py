@@ -31,10 +31,10 @@ done = True
 print(f"\nyour BMI is {int(BMI)}")
 print(type(BMI))
 if 0 <= BMI <= 18.5:
-    print("you are underweight,\n please improve your protein intake")
+    print("you are underweight,\n please improve your protein intake\n 2 eggs each day, and light exercise every morning")
 elif 18.6 <= BMI <= 25:
-    print("you are normal weight,\n stay as you are and exercise")
+    print("you are normal weight,\n stay as you are ,improve your food intake (include vegetables) and exercise")
 elif 25.1 <= BMI <= 30:
-    print("you are overweight,\n you must know what its like to live in somalia")
+    print("you are overweight,\n you must know what its like to live in somalia, you need exercise and less carbohydrate")
 else:
-    print("you are too much, you will die of obesity")
+    print("you are too much, you will die of obesity\nIF YOU DONT REACT NOW")
