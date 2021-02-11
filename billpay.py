@@ -1,7 +1,7 @@
-total = input("enter your total bill\n")
-consumers = input("total number of friends to pay bill\n")
+total = input("enter your total bill.\n")
+consumers = input("total number of friends to pay bill.\n")
 tips = input("how much tip do you wanna give?\n")
-vat = input("is there an extra VAT(yes/no)\n")
+vat = input("is there an extra VAT?(yes/no)\n")
 if vat == "yes" or "YES" or "Yes":
     vatamt = (13/100)*int(total)
 else:
