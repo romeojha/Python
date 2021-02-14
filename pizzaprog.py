@@ -20,6 +20,7 @@ if size == "s":
     else:
         pizza_price = small
         print("you choose small pizza of ", pizza_price)
+        # medium pizza price
 elif size == "m":
     if cheese == "y" and pepper == "y":
         pizza_price = medium+cheese_price
@@ -33,6 +34,7 @@ elif size == "m":
     else:
         pizza_price = medium
         print("you choose medium pizza of ", pizza_price)
+        # large pizza price
 elif size == "l":
     if cheese == "y" and pepper == "y":
         pizza_price = large+cheese_price+100
