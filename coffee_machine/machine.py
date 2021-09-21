@@ -80,8 +80,8 @@ def is_enough_resources(req_coffee, req_ingredent):
 def coin_process():
     '''process given coin and return total money as float'''
     print('insert money')
-    money = float(input('how many one dollar: '))*1
-    money += float(input('how many quarters'))*.25
+    money = float(input('how many rupees: '))*1
+    # money += float(input('how many quarters'))*.25
     print(f"you inserted total sum of {money}")
     return money
 

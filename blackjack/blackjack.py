@@ -23,8 +23,10 @@ usum=sum(udeck)
 print("your deck" ,udeck)
 print("dealer deck" ,cdeck)
 cdeck+=[random_generator()]
+print(cdeck)
 if sum(cdeck)<17:
     cdeck+=[random_generator()]
+    print(cdeck)
 csum=sum(cdeck)
 h_or_s=input('"hit" or "stand?"\n').lower()
 

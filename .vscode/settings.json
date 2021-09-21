@@ -14,5 +14,6 @@
         "*_test.py"
     ],
     "python.pythonPath": "/usr/bin/python3",
-    "python.testing.promptToConfigure": false
+    "python.testing.promptToConfigure": false,
+    "python.formatting.provider": "yapf"
 }

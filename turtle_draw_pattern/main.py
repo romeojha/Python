@@ -5,7 +5,7 @@ import random
 
 a_turtle = t.Turtle()
 a_turtle.pensize(15)
-a_turtle.speed(0)
+a_turtle.speed(5)
 t.colormode(255)
 
 
@@ -46,11 +46,11 @@ def pentagon(value, val):
 
 
 def randomWalk():
-    angle = [0, 90,180, 270]
+    angle = [0, 90, 270]
     for i in range(500):
         a_turtle.left(random.choice(angle))
         a_turtle.color(randomcolor())
-        a_turtle.fd(40)
+        a_turtle.fd(30)
         # a_turtle.penup()
         # a_turtle.fd(30)
         # a_turtle.pendown()

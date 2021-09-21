@@ -1,6 +1,5 @@
 alphabets=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
-'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',' ','!','a', 'b', 'c', 'd', 'e', 'f', 
-'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o','p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',' ','!']
+'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',' ','!',]
 num=0
 dir=input("'encode' or 'decode'\n")
 value=input("enter text you want to encrypt\n")
@@ -14,6 +13,8 @@ def ceaser(n,to_input,shift,direction):
             index=alphabets.index(i)
             if direction=='decode':
                 shift*=-1
+            elif direction=='encode':
+                shift*=1
             to_input[n]=alphabets[abs(index+shift)]
             n+=1
         else:
@@ -22,12 +23,13 @@ def ceaser(n,to_input,shift,direction):
     to_input=''.join(to_input)
     print(to_input)
 ceaser(n=num,to_input=value,shift=shift_amt,direction=dir)
-again=input("wanna try again?y/n\n").lower
 
+again=input("wanna try again?y/n\n").lower
 condition=True
 while condition:
-    if again == 'y':
-        ceaser(n=num,to_input=value,shift=shift_amt,direction=dir)
+    if again =='Y':
+        a=ceaser(n=num,to_input=value,shift=shift_amt,direction=dir)
+        print(a)
     else:
         print("bye")
         condition=False
